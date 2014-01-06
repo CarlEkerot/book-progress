@@ -1,0 +1,21 @@
+<template name="book">
+  <tr id="{{_id}}">
+    <td class="span2">{{name}}</td>
+    <td class="span7">
+      <div class="progress">
+        <div class="bar" style="width: {{percent_done}}%;">{{percent_done}}%</div>
+      </div>
+    </td>
+    <td class="span3">
+      <div class="form-inline">
+        <input type="number" class="pages_read input-small" value="{{pages_read}}">
+        <button type="button" class="increment btn btn-primary btn-small" title="Add page to pages read">
+          <i class="icon-plus icon-white"></i>
+        </button>
+        <button type="button" class="remove btn btn-danger btn-small" title="Remove book">
+          <i class="icon-trash icon-white"></i>
+        </button>
+      </div>
+    </td>
+  </tr>
+</template>
